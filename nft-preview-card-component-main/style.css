@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif; 
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 450px;
+    
+}
+
+.wrapper{
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow: 0 0 17px 0 black;
+
+}
+
+.img-top{
+
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 17px 0 black;
+}
+
+.img-top img{
+    width: 100%;
+    /* height: 100%;
+    object-fit: cover; */
+    /* display: block; */
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%, 0.4);
+    /* opacity: 0.6; */
+    display: none;
+    /* transition: 0.4s; */
+}
+
+.img-overlay img{
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* .img-overlay img:hover{
+    background-color: aqua;
+    opacity: 0.4;
+} */
+
+.img-top:hover .img-overlay{
+    display: block;
+}
+
+.box-text a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 20px 0;
+    display: inline-block;
+
+}
+
+.box-text a:hover{
+    color: cyan;
+}
+
+p{
+    color: lightblue;
+
+}
+
+
+.flex{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 25px 0;
+}
+
+.eth, .days{
+    display: flex;
+    align-items: center;
+
+}
+
+.eth p{
+    color: cyan;
+    font-weight: 600;
+    padding-left: 7px;
+}
+
+.days p{
+    padding-left: 7px;
+}
+
+hr{
+    border-color: lightblue;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.author img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 15px;
+}
+
+.author p a.name{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.author p a.name 
+{
+    color: cyan;
+}
